@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Customer Survey Form</h2>
+
+      <form id="surveyForm">
+        <span class="validation-message" id="firstNameValidationMessage"></span>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required /><br />
+
+        <span class="validation-message" id="lastNameValidationMessage"></span>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required /><br />
+
+        <span class="validation-message" id="dobValidationMessage"></span>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required /><br />
+
+        <span class="validation-message" id="countryValidationMessage"></span>
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+          <option value="">Select Country</option>
+          <option value="usa">India</option>
+          <option value="usa">Nepal</option>
+          <option value="usa">Pakistan</option>
+          <option value="usa">United States</option>
+          <option value="canada">Canada</option>
+          <!-- Add other country options --></select
+        ><br />
+
+        <span class="validation-message" id="genderValidationMessage"></span>
+        <label>Gender</label>
+        <label class="checkbox">
+          <input type="checkbox" name="gender" value="male" /> Male
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="gender" value="female" /> Female
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="gender" value="other" /> Other
+        </label>
+        <br />
+        <span
+          class="validation-message"
+          id="professionValidationMessage"
+        ></span>
+        <label for="profession">Profession</label>
+        <input type="text" id="profession" name="profession" required /><br />
+
+        <span class="validation-message" id="emailValidationMessage"></span>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required /><br />
+
+        <span class="validation-message" id="mobileValidationMessage"></span>
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" id="mobile" name="mobile" required />
+
+        <button type="button" id="submitBtn">Submit</button>
+        <button type="button" id="resetBtn">Reset</button>
+      </form>
+    </div>
+
+    <div id="popup">
+      <h2>Survey Submission</h2>
+      <p>First Name: <span id="popFirstName"></span></p>
+      <p>Last Name: <span id="popLastName"></span></p>
+      <p>Date of Birth: <span id="popDOB"></span></p>
+      <p>Country: <span id="popCountry"></span></p>
+      <p>Gender: <span id="popGender"></span></p>
+      <p>Profession: <span id="popProfession"></span></p>
+      <p>Email: <span id="popEmail"></span></p>
+      <p>Mobile Number: <span id="popMobile"></span></p>
+      <button id="closePopupBtn">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
