@@ -41,11 +41,6 @@ label {
   transition: color 0.3s ease-in-out;
 }
 
-label:hover {
-  color: #1f4172;
-  transform: scale(1.02);
-}
-
 input[type="text"],
 input[type="email"],
 input[type="tel"],
